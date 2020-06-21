@@ -29,8 +29,9 @@ public class ClusteringClass {
 			// The returned will be an array of data partitions, each partition represents a
 			// cluster
 			Dataset[] clusters = km.cluster(dataset);
+			int i = 1;
 			for (Object cluster : clusters)
-				System.out.println(cluster);
+				System.out.println("Cluster "+ i++ +" = "+cluster);
 
 		} catch (IOException ex) {
 			ex.printStackTrace();

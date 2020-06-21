@@ -21,8 +21,9 @@ public class SimpleTokenizerClass {
 		String tokens[] = simpleTokenizer.tokenize(rawText);
 
 		// Print all the tokens
+		int i = 1;
 		for (String token : tokens) {
-			System.out.println(token);
+			System.out.println(i++ +" = "+token);
 		}
 	}
 }

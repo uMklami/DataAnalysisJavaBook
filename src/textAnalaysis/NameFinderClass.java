@@ -44,8 +44,9 @@ public class NameFinderClass {
 			Span names[] = nameFinder.find(tokens);
 
 			// Print all of the persons names in sentences
+			int i = 1;
 			for (Span name : names)
-				System.out.println(tokens[name.getStart()]);
+				System.out.println(i++ + " = " + tokens[name.getStart()]);
 
 		} catch (IOException e) {
 			e.printStackTrace();
